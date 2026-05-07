@@ -2,7 +2,7 @@ template <typename T>
 void MinHeap<T>::siftUp(int i) {
     // TODO: Move element at index i upward until heap property restored
     while (i > 0 && data[i] < data[parent(i)]) {
-        swap(data[i], data[parent(i)])
+        swap(data[i], data[parent(i)]);
         i = parent(i);
     }
 }
