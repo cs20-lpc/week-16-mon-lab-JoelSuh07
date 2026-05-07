@@ -8,8 +8,13 @@ void heapsort(vector<T>& arr) {
     MinHeap<T> h;
 
     // TODO: Insert all elements into heap using sift-down insert from lecture
-    h.insert()
+    for (const T& val : arr){
+        h.insert(val));
+    }
     // TODO: Repeatedly remove root and store back into array
+    for (int i = 0; i < h.size(); ++i){
+        arr[i] = h.removeRoot();
+    }
 }
 
 int main() {
