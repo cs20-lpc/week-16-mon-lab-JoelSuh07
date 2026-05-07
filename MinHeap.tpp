@@ -23,8 +23,8 @@ void MinHeap<T>::siftDown(int i) {
     }
 
     if (small != i) { // base case
-        swap(&data[i], &data[small]);
-        data.siftDown(small);
+        swap(data[i], data[small]);
+        siftDown(small);
     }
 }
 

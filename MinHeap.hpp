@@ -1,6 +1,7 @@
 #pragma once
 #include <vector>
 #include <stdexcept>
+#include <algorithm>
 using namespace std;
 
 template <typename T>
